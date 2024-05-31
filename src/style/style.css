@@ -2,27 +2,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+#search-text {
+    height: 20px;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    font-size: 16px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    font-weight: 400;
+
+    padding: 4px;
+
+    margin-right: 5px;
+}
+
+#search {
+    height: 25px;
+
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+}
+
+#search:hover, #search:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.fa-search {
+    background-color: rgba(0, 0, 0, 1);
+    -webkit-mask-image: url("../images/magnify.svg");
+    mask-image: url("../images/magnify.svg");
+    mask-repeat: no-repeat;
+
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS */
+#random {
+    background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#random:hover, #random:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+} 
 
 .img-container {
     width: 500px;
     height: 500px;
 
     display: flex;
-    align-items: center;
-}
-
-.main {
-    height: calc(100vh - 100px);
-
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.error {
+    height: 50px;
+    color: red;
+}
+
 .footer {
-    font-family: 'Urbanist', sans-serif;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     background-color: white;
     color: black;

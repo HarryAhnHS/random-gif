@@ -7,9 +7,19 @@
 </head>
 <body>
     <div class="main">
-        <div class="img-container">
-            <img src="#">
+        <div class="controls">
+            <div class="search">
+                <form novalidate>
+                    <input type="text" id="search-text" placeholder="Anything on your mind..." required>
+                    <button type="submit" id="search"><i class="fa-search"></i></button>
+                </form>
+            </div>
+            <button id="random">I'm feeling lucky</button>
         </div>
+        <div class="img-container">
+            <img>
+        </div>
+        <div class="error"></div>
     </div>
     
     <div class="footer">
